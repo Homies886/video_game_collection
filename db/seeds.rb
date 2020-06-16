@@ -10,3 +10,5 @@
 sports = Genre.create(name: "Sports")
 rpg = Genre.create(name: "RPG")
 strategy = Genre.create(name: "Strategy")
+
+Game.create(title: "Final Fantasy XIV", description: "Eorzea. A land embraced by Gods and forged by Heroes. A realm full of danger and glory, where the life of an adventurer is the pursuit of fame and fortune.", image_url: "https://steamcdn-a.akamaihd.net/steam/apps/39210/capsule_616x353.jpg?t=1579047377", genre_id: rpg.id)
