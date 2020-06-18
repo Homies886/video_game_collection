@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Genre.destroy_all
+Game.destroy_all
 
 sports = Genre.create(name: "Sports")
 rpg = Genre.create(name: "RPG")
