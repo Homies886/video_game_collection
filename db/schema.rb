@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_06_18_172518) do
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "genre_id"
+    t.bigint "genre_id", null: false
     t.index ["genre_id"], name: "index_games_on_genre_id"
   end
 
