@@ -14,10 +14,16 @@ class Api::V1::GamesController < ApplicationController
         end
     end
 
+    def destroy
+        game = Game.find_by_id(game_params[:id])
+        game.destroy
+        render json: game
+    end
+
     private
 
     def game_params
-        params.require(:game).permit(:title, :description, :image_url, :genre_id)
+        params.require(:game).permit(:id, :title, :description, :image_url, :genre_id)
     end
 
 end
