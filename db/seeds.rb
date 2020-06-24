@@ -9,8 +9,13 @@
 Genre.destroy_all
 Game.destroy_all
 
-sports = Genre.create(name: "Sports")
+action = Genre.create(name: "Action")
+action_adventure = Genre.create(name: "Action-adventure")
+adventure = Genre.create(name: "Adventure")
 rpg = Genre.create(name: "RPG")
+simulation = Genre.create(name: "Simulation")
 strategy = Genre.create(name: "Strategy")
+sports = Genre.create(name: "Sports")
+puzzle = Genre.create(name: "Puzzle")
 
 Game.create(title: "Final Fantasy XIV", description: "Eorzea. A land embraced by Gods and forged by Heroes. A realm full of danger and glory, where the life of an adventurer is the pursuit of fame and fortune.", image_url: "https://steamcdn-a.akamaihd.net/steam/apps/39210/capsule_616x353.jpg?t=1579047377", genre_id: rpg.id)
